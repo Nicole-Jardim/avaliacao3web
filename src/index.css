@@ -66,6 +66,24 @@ body {
   box-sizing: border-box;
 }
 
+/* Utility classes */
+.container {
+  max-width: 1126px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.muted {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+/* Simple responsive helper */
+@media (max-width: 768px) {
+  #root { padding: 12px; }
+  h1 { font-size: 28px; }
+}
+
 h1,
 h2 {
   font-family: var(--heading);

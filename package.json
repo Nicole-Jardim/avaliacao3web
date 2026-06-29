@@ -2,14 +2,16 @@
   "name": "avaliacao3web",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "node src/App.jsx",
+    "server:dev": "nodemon src/App.jsx",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
@@ -18,6 +20,7 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "nodemon": "^2.0.22",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",

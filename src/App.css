@@ -182,3 +182,63 @@
     border-right-color: var(--border);
   }
 }
+
+/* Frontend helpers for basic admin UI / demo */
+.server-ui {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,250,250,0.4));
+  box-shadow: var(--shadow);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1 1 auto;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.btn {
+  padding: 8px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+
+.api-result {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--code-bg);
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 14px;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.small {
+  font-size: 13px;
+  color: var(--text);
+}
